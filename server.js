@@ -24,7 +24,10 @@ app.use(cors({
 
 //basic server with get request
 app.get('/', (req, res) => {
-    res.send('server is ready to host jokes. To see jokes change url to /api/jokes');
+    res.send('server is ready to host jokes. To see jokes change url to /api/jokes'); // we can send a html code as well here.
+});
+app.get('/api', (req, res) => {
+    res.send('<h1>Still searching for joke !!! Go to /api/jokes</h1>'); // we can send a html code as well here.
 });
 
 app.get('/api/jokes', (req, res) => {

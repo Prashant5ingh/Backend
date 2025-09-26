@@ -8,7 +8,7 @@ const app = express();
 // Handling cors error --> whitelisting the host webpage along with port number.
 app.use(cors({
 //   origin: 'http://localhost:5173', // ✅ Replace with your actual frontend URL  
-  origin: 'https://frontend-nine-ebon-34.vercel.app/', // ✅ Replace with your actual vercel frontend URL  
+  origin: 'https://frontend-nine-ebon-34.vercel.app', // ✅ Replace with your actual vercel frontend URL  
 
   methods: ['GET', 'POST'], // Add others as needed
   credentials: true // If you're using cookies or auth headers

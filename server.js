@@ -12,7 +12,7 @@ app.use(cors({
 
   methods: ['GET', 'POST'], // Add others as needed
   credentials: true // If you're using cookies or auth headers
-}));
+})); // In Local development all this cors process can be avoided by using proxy object of vite.config.js.
 
 // setting up proxy for dynamic localhost domain name in vite.config.js
 // And now it makes server to believe that vite app is also running on same server and request for api calls coming from 3000 (Just like home entry). Means we don't have to handle cors error for the same localhost port number.
